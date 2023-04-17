@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <headerOne :title="title"/>
+    <characterLibary/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import headerOne from './components/headerOne.vue';
+/*import footerOne from './components/footerOne.vue';
+import assideOne from './components/assideOne.vue';*/
+import characterLibary from './components/characterLibary.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {headerOne, characterLibary},
+  data() {
+    return {
+      title: 'RPG Character Libary',
+    }
   }
 }
 </script>
