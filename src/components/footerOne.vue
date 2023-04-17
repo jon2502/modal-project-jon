@@ -1,5 +1,5 @@
 <template>
-    <h3></h3>
+    <h3>&copy; copyrihtgs reserverd 2023</h3>
 </template>
 
 <script>

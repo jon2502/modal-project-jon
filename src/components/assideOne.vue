@@ -7,5 +7,8 @@
 </script>
 
 <style>
-
+    #emptySpace{
+        background-color: aqua;
+        width: 100%;
+    }
 </style>
