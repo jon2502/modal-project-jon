@@ -1,18 +1,18 @@
 <template>
     <div id="gridHeader">
-        <h1> {{ title }}</h1>
+        <h1 @click="ToggleBtn('a')"> {{ title }}</h1>
     <ul id="menu">
         <ul>
-            <a href="test1">test1</a>
+            <button @click="ToggleBtn('b')" >Brandr</button>
         </ul>
         <ul>
-            <a href="test2">test2</a>
+            <button @click="ToggleBtn('c')">Gethlire</button>
         </ul>
         <ul>
-            <a href="test3">test3</a>
+            <button @click="ToggleBtn('d')">Scathach</button>
         </ul>
         <ul>
-            <a href="test4">test3</a>
+            <button @click="ToggleBtn('e')">name pending</button>
         </ul>
     </ul>
     </div>
@@ -22,18 +22,27 @@
 export default {
     props: [
         'title',
-    ]
+        
+    ],
+    methods: {
+    ToggleBtn(id){
+      this.$emit('toggle', id)
+    }
+  }
 }
 </script>
 
 <style>
 #gridHeader{
     display: grid;
-    grid-template-columns: 20vw 80vw;
+    padding-left: 4vw;
+    grid-template-columns: 20% 80%;
     background-color: rosybrown;
 }
 #menu{
     display: grid;
-    grid-template-columns: repeat(4,6rem);
+    grid-template-columns: repeat(4,10vw);
+    justify-content: center;
+    align-content: center;
 }
 </style>
