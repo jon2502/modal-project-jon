@@ -38,7 +38,7 @@
         </div>
         <div class="infoContainer">
             <div>
-                <h2>Name pending</h2>
+                <h2>name pending</h2>
             <ul>
                 <li>Race: tiefling</li>
                 <li>Culture: info pending</li>

@@ -4,8 +4,6 @@
       <characterLibary v-if="indicator == 'a'"/>
       <ToggleBrandr v-if="indicator == 'b'"/>
       <ToggleGethlire v-if="indicator == 'c'"/>
-      <ToggleScathach v-if="indicator =='d'"/>
-      <ToggleName v-if="indicator =='e'"/>
       <assideOne/>
     </div>
     <footerOne/>
@@ -17,13 +15,11 @@ import footerOne from './components/footerOne.vue';
 import assideOne from './components/assideOne.vue';
 import characterLibary from './components/characterLibary.vue';
 import ToggleBrandr from './components/ToggleBrandr.vue';
-import ToggleGethlire from './components/ToggleGethlire.vue';
-import ToggleScathach from './components/ToggleScathach.vue';
-import ToggleName from './components/ToggleName.vue';
+import ToggleGethlire from './components/ToggleGethlire.vue'
 
 export default {
   name: 'App',
-  components: {headerOne, characterLibary, assideOne, footerOne, ToggleBrandr, ToggleGethlire,ToggleScathach,ToggleName},
+  components: {headerOne, characterLibary, assideOne, footerOne, ToggleBrandr, ToggleGethlire},
   data() {
     return {
       title: 'RPG Character Libary',
